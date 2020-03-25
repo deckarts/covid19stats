@@ -11,8 +11,8 @@ axios.all([getUS()])
     .then(axios.spread(function (usa) {
         console.log(
             '\nUnited States\nTested: ' + usa['data'][0]['posNeg']
-            + '\nPositive: ' + usa['data'][0]['positive']
-            + '\nNegative: ' + usa['data'][0]['negative']
+            + '\nPositive: '     + usa['data'][0]['positive']
+            + '\nNegative: '     + usa['data'][0]['negative']
             + '\nHospitalized: ' + usa['data'][0]['hospitalized']
-            + '\nDeaths: ' + usa['data'][0]['death']);
+            + '\nDeaths: '       + usa['data'][0]['death']);
     }));
